@@ -14,16 +14,18 @@ $ sudo systemctl enable httpd
 #允許防火牆使用httpd
 $ sudo firewall-cmd --permanent --zone=public --add-service=http
 $ sudo firewall-cmd --reload
-
+```
+```
 ## 安裝php7.4
 #由於centos8 stream 沒有直接提供7.4版本，所以我們手動拉入更新清單
-```
+
 $ sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 $ sudo yum -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 $ sudo dnf -y install dnf-utils
 $ sudo dnf module install php:remi-7.4
 $ sudo dnf update
 $ sudo yum list php
+```
 ```
 #安裝需要php套件
 $ sudo yum install php-fpm php-mysqlnd
