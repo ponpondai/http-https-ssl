@@ -5,6 +5,7 @@
 $ sudo yum -y update
 
 ## 安裝Apache
+```
 $ sudo yum install -y httpd
 #啟動httpd
 $ sudo systemctl start httpd
